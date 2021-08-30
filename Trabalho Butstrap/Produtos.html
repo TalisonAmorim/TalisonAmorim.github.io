@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="pt-br">
+
+<!-- Requisitos específicos:
+  Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+  JavaScript: validações.
+  Css: Estilizar o rodapé usando exclusivamente css.
+  HTML: Utilizar <aside> e <article>
+  Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos). -->
+
+  <!-- Requisitos BootStrap:
+  Layout responsivo usando grid 
+  formulário 
+  menu drop-down/nav-bar responsivo
+  Estilo nos botões e texto  -->
+
+  <!-- Requisitos do projeto : 
+
+  Site formado com 4 páginas (mínimo) 6 (máximo): 01 - Pagina inicial , 02 - Quem somos/Sobre Nós , 03 - Formulário e 04 - Parceiros ou Serviços;
+  Utilizar a paleta de cores do cliente, podendo mudar os tons apenas nas variações das cores base;
+  Utilizar prioritariamente logos e arquivos do cliente (prioritariamente) , caso o cliente não disponha pode utilizar mídia genérica baseada no negocio do cliente .
+  O cliente pode fornecer ideias adicionais para o projeto mas as partes obrigatórias são as contempladas nos requisitos aqui apresentados , caso tenha atendido a todos e seja viável implementar extras assim o faça. -->
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!-- CSS Pagina -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- favicon.ico -->
+  <link rel="shortcut icon" href="img/farmcia ico.png" type="image/x-icon">
+  <title>Produtos</title>
+</head>
+
+
+<body>
+  
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="#"><img src="img/ico farma vida.png" class="img-fluid" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">PRODUTOS <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="QuemSomos.html" id="navbarDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOBRE NOS</a>
+            <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="QuemSomos.html#QuemSomos">Quem Somos</a>
+              <a class="dropdown-item" href="QuemSomos.html#Servicos">Serviços</a>
+              <a class="dropdown-item" href="QuemSomos.html#Missao">Missão</a>
+              <a class="dropdown-item" href="QuemSomos.html#visao">Visão</a>
+              <a class="dropdown-item" href="QuemSomos.html#valores">Valores</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="QuemSomos.html#mapa">Onde Estamos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="formulario.html">SUA RECEITA</a>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+    </nav>
+    <!-- Botão topo -->
+    <a href="#" class="scrollToTop"><img src="img/ancora.png" alt=""></a>
+
+<!-- Libras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section>
+
+    
+      <div class="list-group list-group-horizontal" id="minhaLista" role="tablist">
+        <a class="list-group-item list-group-item-action active " data-toggle="list" href="#EMAGRECIMENTO" role="tab">EMAGRECIMENTO</a>
+        <a class="list-group-item list-group-item-action  " data-toggle="list" href="#BELEZA" role="tab">BELEZA</a>
+        <a class="list-group-item list-group-item-action " data-toggle="list" href="#DESENPENHO" role="tab">DESENPENHO FÍSICO</a>
+        <a class="list-group-item list-group-item-action " data-toggle="list" href="#HOMEOPATIA" role="tab">HOMEOPATIA</a>
+      </div>
+    
+
+<main>      
+        <section class="tab-content container">
+          <article class="tab-pane active" id="EMAGRECIMENTO" role="tabpanel">
+
+            <div class="row " >
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 1</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center ">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> EMAGRECIMENTO 2</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 3</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 4</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 5</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 6</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 7</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">EMAGRECIMENTO 8</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+
+          </article>
+
+          <article class="tab-pane" id="BELEZA" role="tabpanel">
+
+            <div class="row ">
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 1</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> BELEZA 2</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 3</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 4</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 5</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 6</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 7</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BELEZA 8</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </article>
+
+          <article class="tab-pane" id="DESENPENHO" role="tabpanel">
+
+            <div class="row ">
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 1</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> DESENPENHO FÍSICO  2</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 3</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 4</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 5</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 6</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 7</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DESENPENHO FÍSICO 8</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </article>
+          
+          <article class="tab-pane" id="HOMEOPATIA" role="tabpanel">
+
+            <div class="row ">
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 1</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> HOMEOPATIA 2</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 3</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 4</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 5</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 6</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA 7</h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card " style="width: 15rem;">
+                  <img class="card-img-top" src="img/produto.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">HOMEOPATIA </h5>
+                    <p class="card-text text-truncate text-danger font-weight-bold">R$ 00,00</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+
+          </article>
+        </section>
+      
+  <section>
+
+
+
+</main>
+
+
+
+
+<aside id="formeOfertas">
+  <!-- formulario de ofertas -->
+  <h3 class="text-success">QUE TAL RECEBER DICAS DE SAÚDE E OFERTAS EXCLUSIVAS?</h3>
+  <form>
+    <p class="text-black-50">Informe seu melhor e-mail. Não se preocupe, ele estará seguro conosco:</p>
+    <div class="form-row align-items-center">
+      <div class="col-sm-3 my-1">
+        <label class="sr-only" for="inlineFormInputName">Nome</label>
+        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Digite seu Nome">
+      </div>
+      <div class="col-sm-5 my-1">
+        <label class="sr-only" for="inlineFormInputGroupUsername">e-mail</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Digite seu E-mail">
+        </div>
+      </div>
+
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+          </svg> Quero receber</button>
+      </div>
+    </div>
+  </form>
+</aside>
+
+
+
+<footer>
+  <div id="footer">
+
+
+    <div>
+      <h4>Redes Sociais</h4>
+        <a href="#"><img src="img/facebook.png" alt=""></a> 
+         <a href="#"><img src="img/instagram.png" alt=""></a>
+    </div>
+
+    <div>
+      <h4>Certificados</h4>
+      <a href="" target="_blank"><img src="img/google-site-seguro-novo.png" alt="Site Seguro Google" /></a>
+    </div>
+
+    <div>
+      <h4>Formas de Pagamento</h4>
+      <img src="img/visa.png" alt="Formas de Pagamento" title="Formas de Pagamento" />
+    </div>
+  </div>
+  <div id="copyright">
+    <p>Copyright © 2021 Desenvolvido por Talison A. Nascimento</p>
+  </div>
+
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+<!-- script minha pagina] -->
+<script src="js/script.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- libras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+</body>
+
+</html>

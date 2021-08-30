@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <!-- Requisitos específicos:
+  Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+  JavaScript: validações.
+  Css: Estilizar o rodapé usando exclusivamente css.
+  HTML: Utilizar <aside> e <article>
+  Realizar comentário no código linha 4 os requisitos específicos(indice dos requisitos). -->
+
+  <!-- Requisitos BootStrap:
+  Layout responsivo usando grid 
+  formulário 
+  menu drop-down/nav-bar responsivo
+  Estilo nos botões e texto  -->
+
+  <!-- Requisitos do projeto : 
+
+  Site formado com 4 páginas (mínimo) 6 (máximo): 01 - Pagina inicial , 02 - Quem somos/Sobre Nós , 03 - Formulário e 04 - Parceiros ou Serviços;
+  Utilizar a paleta de cores do cliente, podendo mudar os tons apenas nas variações das cores base;
+  Utilizar prioritariamente logos e arquivos do cliente (prioritariamente) , caso o cliente não disponha pode utilizar mídia genérica baseada no negocio do cliente .
+  O cliente pode fornecer ideias adicionais para o projeto mas as partes obrigatórias são as contempladas nos requisitos aqui apresentados , caso tenha atendido a todos e seja viável implementar extras assim o faça. -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <!-- CSS Pagina -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- favicon.ico -->
+  <link rel="shortcut icon" href="img/farmcia ico.png" type="image/x-icon">
+  <title>Quem Somos</title>
+</head>
+
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="#"><img src="img/ico farma vida.png" class="img-fluid" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Produtos.html">PRODUTOS </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SOBRE NOS <span class="sr-only">(página
+                atual)</span></a>
+            <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="QuemSomos.html#QuemSomos">Quem Somos</a>
+              <a class="dropdown-item" href="QuemSomos.html#Servicos">Serviços</a>
+              <a class="dropdown-item" href="QuemSomos.html#Missao">Missão</a>
+              <a class="dropdown-item" href="QuemSomos.html#visao">Visão</a>
+              <a class="dropdown-item" href="QuemSomos.html#valores">Valores</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="QuemSomos.html#mapa">Onde Estamos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="formulario.html">SUA RECEITA</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Botão topo -->
+    <a href="#" class="scrollToTop"><img src="img/ancora.png" alt=""></a>
+<!-- Libras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main id="SobreNos">
+
+    <section class="container">
+
+      <h1 class="text-center" id="QuemSomos">Quem Somos</h1>
+      <article class="row" >
+
+        <div  class="col-xs-12  col-sm-12 col-md-4 col-lx-4">
+          <img src="img/nos.png" class="img-fluid img-thumbnail" alt="">
+        </div>
+
+        <div class="col-xs-12  col-sm-12 col-md-8 col-lx-8">
+          <h2>Somos a Farma Vida</h2>
+          <h3>Sua farmacia de manipulação</h3>
+          <p>Estamos no mercado des de 2012 sediado no sentro de Brasilia para melhor atenter seus clientes</p>
+          
+          <p>Trabalhar para que  tenhamos as melhores condições comerciais no mercado brasileiro.</p>
+           <p> Ser reconhecidos pelos fornecedores, prestadores de serviço e associados como uma rede que trabalha incansavelmente para que existam reciprocidade e longevidade nos acordos comerciais realizados pela administração central.</p>
+            <p> Orientar os associados para implementar as ferramentas, metodologias administrativas e comerciais a fim de competir através da excelência na gestão.</p>
+           <p> Ser reconhecido como uma rede de amigos, onde a cultura da amizade e colaboração seja uma referência no mercado farmacêutico.</p>
+        </div>
+      </article>
+
+
+
+      <h1 class="text-center" id="Servicos">Serviços</h1>
+      <article class="row" >
+
+        <div class="col-xs-12  col-sm-12 col-md-8 col-lx-8">
+          <h2>Nossos Serviços</h2>
+					<p> Oferecemos uma unidade no centro Brasília para melhor lhe atender. Também oferecemos atendimento on line </p>
+					<p> Trabalhamos com os melhores preços de Brasília. medicação dos melhores laboratórios do mundo certificadas e autorizadas pela ANVISA.</p>
+					<p> Contamos com os meçhores proficionais do ramo  .</p>
+          <p>Oferecemos aos nossos clientes sempre os melhores preços,a farma vida negocia as compras da rede junto aos maiores laboratórios do Brasil.</p>
+        </div>
+
+        <div  class="col-xs-12  col-sm-12 col-md-4 col-lx-4">
+          <img src="img/serviços.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </article>
+
+
+      <h1 class="text-center" id="Missao">Missão</h1>
+      <article class="row" >
+
+        <div  class="col-xs-12  col-sm-12 col-md-4 col-lx-4 " >
+          <img src="img/Misão.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+
+        <div class="col-xs-12  col-sm-12 col-md-8 col-lx-8">
+          <h2>Nossa Missão</h2>
+ 
+          <p>Promover acesso à saúde por meio de preço competitivo, atendimento de excelência, com resultado sustentável.</p>
+        </div>
+      </article>
+
+      
+
+      <h1 class="text-center" id="visao">Visão</h1>
+      <article class="row" >
+
+        <div class="col-xs-12  col-sm-12 col-md-8 col-lx-8" >
+          <h2>Nossos Visão</h2>
+					<p>Manter o posicionamento competitivo, visando estar entre as 8 maiores redes populares na área de atuação, sendo referência no segmento.</p>
+        </div>
+
+        <div  class="col-xs-12  col-sm-12 col-md-4 col-lx-4 ">
+          <img src="img/visão.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </article>
+
+      <h1 class="text-center" id="valores">Valores</h1>
+      <article class="row" >
+
+        <div  class="col-xs-12  col-sm-12 col-md-4 col-lx-4 ">
+          <img src="img/valores.jpg" class="img-fluid img-thumbnail" alt="">
+        </div>
+
+        <div class="col-xs-12  col-sm-12 col-md-8 col-lx-8">
+          <h2>Nossos Valores</h2>
+          
+          <p>Comprometimento: somos comprometidos com nossas crenças, princípios e valores, que são inegociáveis.</p>
+          <p>Foco no Resultado: com uma gestão contemporânea, visamos manter o resultado sustentável.</p>
+          <p>Cuidar de Pessoas: proporcionar um ambiente empático, para que cada um escreva sua melhor história.</p>
+          <p>Orgulho em Pertencer: ser uma empresa a qual todos sintam orgulho em fazer parte.</p>
+
+        </div>
+      </article>
+
+
+      <article id="mapa">
+        <h1 class="text-center" id="visao">Onde estamos</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12908.669516549107!2d-48.0405163091677!3d-15.868659765058112!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1630287061535!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </article>
+
+
+  </main>
+
+
+
+
+  <aside id="formeOfertas">
+    <!-- formulario de ofertas -->
+    <h3 class="text-success">QUE TAL RECEBER DICAS DE SAÚDE E OFERTAS EXCLUSIVAS?</h3>
+    <form>
+      <p class="text-black-50">Informe seu melhor e-mail. Não se preocupe, ele estará seguro conosco:</p>
+      <div class="form-row align-items-center">
+        <div class="col-sm-3 my-1">
+          <label class="sr-only" for="inlineFormInputName">Nome</label>
+          <input type="text" class="form-control" id="inlineFormInputName" placeholder="Digite seu Nome">
+        </div>
+        <div class="col-sm-5 my-1">
+          <label class="sr-only" for="inlineFormInputGroupUsername">e-mail</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Digite seu E-mail">
+          </div>
+        </div>
+
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+            </svg> Quero receber</button>
+        </div>
+      </div>
+    </form>
+  </aside>
+
+
+
+  <footer>
+    <div id="footer">
+
+
+      <div>
+        <h4>Redes Sociais</h4>
+          <a href="#"><img src="img/facebook.png" alt=""></a> 
+           <a href="#"><img src="img/instagram.png" alt=""></a>
+      </div>
+
+      <div>
+        <h4>Certificados</h4>
+        <a href="" target="_blank"><img src="img/google-site-seguro-novo.png" alt="Site Seguro Google" /></a>
+      </div>
+
+      <div>
+        <h4>Formas de Pagamento</h4>
+        <img src="img/visa.png" alt="Formas de Pagamento" title="Formas de Pagamento" />
+      </div>
+    </div>
+    <div id="copyright">
+      <p>Copyright © 2021 Desenvolvido por Talison A. Nascimento</p>
+    </div>
+
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <!-- script minha pagina] -->
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- libras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+</body>
+
+</html>
